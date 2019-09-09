@@ -34,10 +34,7 @@ YOUR PROPS
 
 //this only works after a pull when you comment out this section
   componentWillReceiveProps(nextProps) {
-    if (
-      nextProps.user &&
-      nextProps.user.displayName !== this.props.User.name
-    ) {
+    if (nextProps.user && nextProps.user.displayName !== this.props.User) {
       this.postUserAPI({
         email: nextProps.user.email,
         displayName: nextProps.user.displayName,

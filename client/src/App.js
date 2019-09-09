@@ -11,14 +11,18 @@ import API from "./utils/API";
 
 class App extends Component {
   state = {
-    User: false,
-    Events: false
+    User: "",
+    Events: []
   };
 
   componentWillMount() {
     API.getAllEvents().then(response => {
+      
       console.log(response.data);
-      this.setState({ Events: response.data });
+      this.setState({ User: response.data[0].name, Events: [response.data[0].name, response.data[0].location] });
+
+      console.log(this.state);
+
     });
   }
 
