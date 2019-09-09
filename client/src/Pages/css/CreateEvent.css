@@ -1,0 +1,28 @@
+#outlined-multiline-static{
+    width: 100%;
+}
+h1{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+.MuiInputBase-root {
+    /* color: rgba(168, 166, 166, 0.87); */
+    color: black !important;
+    cursor: text;
+    display: inline-flex;
+    position: relative;
+    font-size: 1rem;
+    box-sizing: border-box;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.1875em;
+}
+.textField label{
+    color: white; 
+}
+
+button{
+    color: black !important;
+    background: rgba(0, 0, 0, 0.3)!important;
+    font-family: 'Courier New', Courier, monospace;
+}
